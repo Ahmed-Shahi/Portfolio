@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Professional Personal Portfolio showcasing skills and projects.">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav class="navbar">
+        <div class="container">
+            <span class="logo">PORTFOLIO</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-image">
+                    <img src="./assets/profile.jpeg" alt="Profile Image">
+                    <div class="glow-effect"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">AHMED SHAHI</h1>
+                    <h2 class="hero-role">MERN STACK DEVELOPER</h2>
+                    <p class="hero-intro">I am a dedicated professional with expertise in building innovative solutions.
+                        My
+                        focus is on efficiency, quality, and creating impactful user experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content">
+                    <p>I’m a Software Engineering student and Full Stack Developer specializing in the MERN stack
+                        (React, Node.js, Express, MongoDB).</p>
+                    <p>Currently, I am expanding my skill set in emerging technologies and industry best practices to
+                        stay at the forefront of my field.</p>
+                    <p>My career goal is to contribute to projects that challenge the status quo and deliver exceptional
+                        value to users and stakeholders.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>HTML, CSS, JavaScript, React, and modern frameworks</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>W</span>
+                        </div>
+                        <h3>MERN Stack</h3>
+                        <p>MongoDB, Express, React, Node.js applications</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>🔍</span>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>On-page SEO, performance optimization, and analytics</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>R</span>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first, cross-browser compatible layouts</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>🎨</span>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design with attention to detail</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span>&gt;_</span>
+                        </div>
+                        <h3>Version Control</h3>
+                        <p>Git, GitHub, and collaborative workflows</p>
+                        <div class="proficiency-container">
+                            <div class="proficiency-header">
+                                <span>Proficiency</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/Clinic.png" alt="Clinic Appointment Website">
+                        </div>
+                        <div class="project-content">
+                            <h3>Clinic Appointment Website</h3>
+                            <p>Featuring specialized dashboards for Patients, Doctors, and Administrators. It integrates AI-powered chatbot capabilities via Google Gemini and employs a modern, premium UI.</p>
+                            <div class="project-tech">MERN Stack</div>
+                            <a href="/" target="_blank" class="github-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/Chatbot.png" alt="AI ChatBot">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI ChatBot</h3>
+                            <p>The system stores individual user chats and reloads past conversations seamlessly, providing a continuous and personalized user experience.</p>
+                            <div class="project-tech">MERN Stack</div>
+                            <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/AI-CHATBOT" target="_blank" class="github-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/VideoChat.png" alt="Video Chat Website">
+                        </div>
+                        <div class="project-content">
+                            <h3>Video Chat Website</h3>
+                            <p>Real-time video chat application using WebSockets, enabling seamless peer-to-peer communication.</p>
+                            <div class="project-tech">MERN+WebRTC Stack</div>
+                            <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/VIDEO-CHAT" target="_blank" class="github-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/Ahmed-Shahi" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ahmed-shahi-4886b1247/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ahmed Shahi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
