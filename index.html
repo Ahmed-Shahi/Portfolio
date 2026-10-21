@@ -4,156 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ahmed Shahi — Full Stack Developer & DevOps Cloud Engineer</title>
+    <meta name="description"
+        content="Portfolio of Ahmed Shahi — Full Stack MERN Developer, DevOps & Cloud Engineer. Building scalable web platforms, 24/7 automated business backends, and containerized cloud microservices.">
+
+    <!-- Google Fonts: Space Grotesk, Syne, Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <meta name="description" content="Professional Personal Portfolio showcasing skills and projects.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Subtle architectural background grid -->
+    <div class="bg-grid-overlay"></div>
     <canvas id="bg-canvas"></canvas>
-    <nav class="navbar">
-        <div class="container">
-            <span class="logo">PORTFOLIO</span>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo" id="brand-logo">
+                <span class="brand-dot"></span>
+                <span class="brand-name">Ahmed</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#story" class="nav-link">Story</a></li>
+                    <li><a href="#experience" class="nav-link">Work/Ex</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#tools" class="nav-link">Stack</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn-outline">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <div class="hero-image">
-                    <img src="./assets/profile.jpeg" alt="Profile Image">
-                    <div class="glow-effect"></div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-card">
+                <!-- Panoramic scenic terrace background -->
+                <div class="hero-bg-layer" style="background-image: url('assets/hero-balustrade-bg.jpg');"></div>
+                <div class="hero-overlay"></div>
+
+                <!-- Top Pill Badge -->
+                <div class="hero-badge-wrapper">
+                    <span class="hero-pill-badge">
+                        Developer who also crafts Cloud & DevOps <span class="badge-sub">(Full-Stack + Cloud
+                            Architecture)</span>
+                    </span>
                 </div>
-                <div class="hero-text">
-                    <h1 class="hero-name">AHMED SHAHI</h1>
-                    <h2 class="hero-role">MERN STACK DEVELOPER</h2>
-                    <p class="hero-intro">I am a dedicated professional with expertise in building innovative solutions.
-                        My
-                        focus is on efficiency, quality, and creating impactful user experiences.</p>
+
+                <!-- Main Hero Stage -->
+                <div class="hero-stage">
+                    <!-- Left: Bold Name -->
+                    <div class="hero-col-left">
+                        <h1 class="hero-display-name">
+                            <span class="name-line">AHMED</span>
+                            <span class="name-line">SHAHI</span>
+                        </h1>
+                    </div>
+
+                    <!-- Center: Cutout / Portrait of Ahmed -->
+                    <div class="hero-col-center">
+                        <div class="hero-portrait-frame">
+                            <div class="portrait-halo"></div>
+                            <img src="assets/profile.jpg" alt="Ahmed Shahi - Full Stack Developer & DevOps Engineer"
+                                class="hero-portrait-img">
+                        </div>
+                    </div>
+
+                    <!-- Right: Tag Roles -->
+                    <div class="hero-col-right">
+                        <div class="hero-role-tags">
+                            <span class="role-tag-item">FULL STACK</span>
+                            <span class="role-tag-item">DEVOPS &amp; CLOUD</span>
+                            <span class="role-tag-item">SYSTEMS ARCHITECT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Bottom Bar -->
+                <div class="hero-bottom-bar">
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
+                        <a href="https://github.com/Ahmed-Shahi" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary" id="btn-github-resume">
+                            GitHub Profile <span class="arrow-icon">↗</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ahmed-shahi-4886b1247" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-secondary" id="btn-linkedin">
+                            LinkedIn <span class="arrow-icon">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-availability">
+                        <span class="status-pulse-dot"></span>
+                        <span class="availability-text">Open to opportunities</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-content">
-                    <p>I’m a Software Engineering student and Full Stack Developer specializing in the MERN stack
-                        (React, Node.js, Express, MongoDB).</p>
-                    <p>Currently, I am expanding my skill set in emerging technologies and industry best practices to
-                        stay at the forefront of my field.</p>
-                    <p>My career goal is to contribute to projects that challenge the status quo and deliver exceptional
-                        value to users and stakeholders.</p>
-                </div>
-            </div>
-        </section>
+        <!-- WHAT YOU GET Section -->
+        <section id="what-you-get" class="section what-you-get-section">
+            <div class="section-container">
+                <div class="wyg-layout">
+                    <!-- Left Column: Big Headline with Acrobat Statue -->
+                    <div class="wyg-col-left">
+                        <div class="wyg-title-group">
+                            <h2 class="massive-section-title">
+                                WHAT<br>YOU GET
+                            </h2>
+                            <div class="wyg-sculpture-wrap">
+                                <img src="assets/statue-acrobat.jpg" alt="Classical Acrobat Sculpture"
+                                    class="wyg-sculpture-img" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>&lt;/&gt;</span>
-                        </div>
-                        <h3>Frontend Development</h3>
-                        <p>HTML, CSS, JavaScript, React, and modern frameworks</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>90%</span>
+                    <!-- Right Column: Warm Tinted Feature Card -->
+                    <div class="wyg-col-right">
+                        <div class="feature-card-warm">
+                            <div class="card-eyebrow">
+                                <span class="dna-pill">FULL STACK × CLOUD DNA</span>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>W</span>
-                        </div>
-                        <h3>MERN Stack</h3>
-                        <p>MongoDB, Express, React, Node.js applications</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>🔍</span>
-                        </div>
-                        <h3>SEO Optimization</h3>
-                        <p>On-page SEO, performance optimization, and analytics</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>R</span>
-                        </div>
-                        <h3>Responsive Design</h3>
-                        <p>Mobile-first, cross-browser compatible layouts</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 88%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>🎨</span>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                        <p>User-centered design with attention to detail</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <span>&gt;_</span>
-                        </div>
-                        <h3>Version Control</h3>
-                        <p>Git, GitHub, and collaborative workflows</p>
-                        <div class="proficiency-container">
-                            <div class="proficiency-header">
-                                <span>Proficiency</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
+                            <h3 class="feature-card-heading">
+                                ARCHITECTURE THAT DRIVES SCALE.<br>
+                                TURN REQUESTS INTO <span class="heading-accent">ACTION.</span>
+                            </h3>
+                            <p class="feature-card-desc">
+                                Precision in full-stack architecture. Power in containerized execution.
+                                Smooth, resilient user flow from client interaction to automated cloud pipelines —
+                                zero bottlenecks. Built to deliver.
+                            </p>
+
+                            <!-- Key Metrics Row -->
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-number">0</div>
+                                    <div class="metric-label">COMPROMISE</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-number">99.9%</div>
+                                    <div class="metric-label">UPTIME</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-number">&infin;</div>
+                                    <div class="metric-label">SCALABILITY</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,87 +164,957 @@
             </div>
         </section>
 
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/Clinic.png" alt="Clinic Appointment Website">
-                        </div>
-                        <div class="project-content">
-                            <h3>Clinic Appointment Website</h3>
-                            <p>Featuring specialized dashboards for Patients, Doctors, and Administrators. It integrates AI-powered chatbot capabilities via Google Gemini and employs a modern, premium UI.</p>
-                            <div class="project-tech">MERN Stack</div>
-                            <a href="https://github.com/Ahmed-Shahi/Clinic-Project" target="_blank" class="github-link">GitHub Repo</a><br>
-                            <a href="https://clinic-frontend-nu.vercel.app/" target="_blank" class="github-link">View Live</a>
+        <!-- MY STORY Section -->
+        <section id="story" class="section story-section">
+            <div class="section-container">
+                <div class="story-header text-center">
+                    <h2 class="section-headline">MY STORY</h2>
+                    <p class="section-tagline">I didn't follow a syllabus. I followed curiosity.</p>
+                </div>
+
+                <div class="story-stage">
+                    <!-- Left Statue: David with Bubblegum -->
+                    <div class="story-flank flank-left">
+                        <img src="assets/david_formal.jpg" alt="David blowing bubblegum"
+                            class="flank-img flank-david" loading="lazy">
+                    </div>
+
+                    <!-- Center Editorial Card -->
+                    <div class="story-center-card">
+                        <p class="story-paragraph">
+                            Started with core web technologies and frontend craftsmanship. Moved deep into Full-Stack
+                            MERN development. Got frustrated when software couldn't scale or crashed under load — so I
+                            learned DevOps, Docker containerization, Linux, and AWS cloud infrastructure to architect
+                            and deploy resilient backends myself.
+                        </p>
+                        <p class="story-paragraph">
+                            Now I sit at the intersection of both: I build high-performance systems that are visually
+                            sharp, rock-solid in security, and I ship them end-to-end.
+                        </p>
+                        <p class="story-paragraph highlight-paragraph">
+                            Currently developing scalable ERP modules at <strong>Aerox ERP</strong>, engineering
+                            automated 24/7 WhatsApp business pipelines at <strong>AJP Pharma</strong>, and building AI
+                            diagnostic systems with Google Gemini. Every container, every database query, and every
+                            RESTful API endpoint, mine.
+                        </p>
+
+                        <!-- Academic & Credentials Footer -->
+                        <div class="story-credentials-footer">
+                            <div class="cred-pill">
+                                <span class="cred-dot"></span>
+                                <strong>Sindh Madressatul Islam University</strong> — B.S. Software Engineering
+                                (Expected 2027) &bull; CGPA: 3.55 / 4.0
+                            </div>
+                            <!-- <div class="cred-coursework">
+                                Data Structures &bull; Operating Systems &bull; Database Systems &bull; Computer
+                                Networks &bull; Software Architecture &bull; Cloud Computing
+                            </div> -->
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/Chatbot.png" alt="AI ChatBot">
-                        </div>
-                        <div class="project-content">
-                            <h3>AI ChatBot</h3>
-                            <p>The system stores individual user chats and reloads past conversations seamlessly, providing a continuous and personalized user experience.</p>
-                            <div class="project-tech">MERN Stack</div>
-                            <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/AI-CHATBOT" target="_blank" class="github-link">GitHub Repo</a>
+
+                    <!-- Right Statue: Thumbs Up -->
+                    <div class="story-flank flank-right">
+                        <img src="assets/statue-thumbsup.jpg" alt="Classical statue thumbs up"
+                            class="flank-img flank-thumbs" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS (Ship-Log) Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header-row">
+                    <h2 class="massive-section-title">PROJECTS</h2>
+                    <div class="view-toggle-wrap">
+                        <span class="toggle-label">View:</span>
+                        <button class="view-btn active" id="view-toggle-list" data-view="list">Ship-Log</button>
+                        <button class="view-btn" id="view-toggle-grid" data-view="grid">Visual Cards</button>
+                    </div>
+                </div>
+
+                <!-- Main Ship-Log Box (Classical philosopher coding on laptop) -->
+                <div class="projects-master-card" id="projects-list-view">
+                    <!-- Left: Ancient Thinker Coding on Laptop -->
+                    <div class="projects-sculpture-col">
+                        <div class="philosopher-wrap">
+                            <img src="assets/statue-laptop.jpg" alt="Classical Greek Thinker coding on MacBook"
+                                class="philosopher-img" loading="lazy">
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/VideoChat.png" alt="Video Chat Website">
+
+                    <!-- Right: Ship-Log Interactive Table -->
+                    <div class="projects-log-col">
+                        <div class="ship-log-header">
+                            <h3 class="ship-log-title">Ship-Log</h3>
+                            <span class="ship-log-sub">Interactive index &bull; click for deep dive</span>
                         </div>
-                        <div class="project-content">
-                            <h3>Video Chat Website</h3>
-                            <p>Real-time video chat application using WebSockets, enabling seamless peer-to-peer communication.</p>
-                            <div class="project-tech">MERN+WebRTC Stack</div>
-                            <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/VIDEO-CHAT" target="_blank" class="github-link">GitHub Repo</a>
+
+                        <div class="ship-log-list">
+                            <!-- Item 1: Real-Time Video Platform -->
+                            <div class="ship-log-item" data-project="video-chat">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">Cloud-Deployed Real-Time Video Platform</h4>
+                                        <span class="item-date">July 2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">WebSockets</span>
+                                        <span class="item-tag">WebRTC</span>
+                                        <span class="item-tag">Docker</span>
+                                        <span class="item-tag">AWS EC2</span>
+                                        <span class="item-tag">Nginx</span>
+                                    </div>
+                                    <p class="item-desc">Sub-100ms connection latency peer-to-peer audio/video.
+                                        Multi-container AWS EC2 setup with automated SSL/TLS renewal.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/VIDEO-CHAT"
+                                        target="_blank" rel="noopener noreferrer" class="item-link" title="GitHub Repo"
+                                        onclick="event.stopPropagation();">Repo ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
+
+                            <!-- Item 2: Multi-Vendor Marketplace -->
+                            <div class="ship-log-item" data-project="multivendor">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">Multi-Vendor Marketplace &amp; E-Commerce Ecosystem</h4>
+                                        <span class="item-date">April 2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">React.js</span>
+                                        <span class="item-tag">Node.js</span>
+                                        <span class="item-tag">MongoDB</span>
+                                        <span class="item-tag">Redux Toolkit</span>
+                                        <span class="item-tag">Docker</span>
+                                    </div>
+                                    <p class="item-desc">1,000+ catalog SKUs, multi-tier vendor portals, automated
+                                        real-time inventory synchronization &amp; granular 3-tier RBAC.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://market-place-frontend-inky.vercel.app/" target="_blank"
+                                        rel="noopener noreferrer" class="item-link live" title="Live Preview"
+                                        onclick="event.stopPropagation();">Live ↗</a>
+                                    <a href="https://github.com/Ahmed-Shahi/Multi-Vendor-E-Commerce-Marketplace-"
+                                        target="_blank" rel="noopener noreferrer" class="item-link" title="GitHub Repo"
+                                        onclick="event.stopPropagation();">Repo ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
+
+                            <!-- Item 3: AI Healthcare & Clinic Portal -->
+                            <div class="ship-log-item" data-project="clinic">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">AI-Powered Healthcare &amp; Clinic Management System</h4>
+                                        <span class="item-date">May 2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">Google Gemini API</span>
+                                        <span class="item-tag">React.js</span>
+                                        <span class="item-tag">Express.js</span>
+                                        <span class="item-tag">MongoDB</span>
+                                    </div>
+                                    <p class="item-desc">24/7 symptom triage via Google Gemini LLM API, reducing clinic
+                                        inquiry bottlenecks by 50% with intuitive EMR workflows.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://clinic-frontend-nu.vercel.app/" target="_blank"
+                                        rel="noopener noreferrer" class="item-link live" title="Live Preview"
+                                        onclick="event.stopPropagation();">Live ↗</a>
+                                    <a href="https://github.com/Ahmed-Shahi/Clinic-Project" target="_blank"
+                                        rel="noopener noreferrer" class="item-link" title="GitHub Repo"
+                                        onclick="event.stopPropagation();">Repo ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
+
+                            <!-- Item 4: AJP Pharma WhatsApp Cloud Bot -->
+                            <div class="ship-log-item" data-project="whatsapp-bot">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">WhatsApp Business Cloud Bot Automation</h4>
+                                        <span class="item-date">June 2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">Meta Graph API</span>
+                                        <span class="item-tag">Webhooks</span>
+                                        <span class="item-tag">Node.js</span>
+                                        <span class="item-tag">Express</span>
+                                    </div>
+                                    <p class="item-desc">Automated pharmaceutical ordering cutting turnaround from 4+
+                                        hours to &lt;30s, 99.9% uptime, +35% lead conversion.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/AI-CHATBOT"
+                                        target="_blank" rel="noopener noreferrer" class="item-link" title="GitHub Repo"
+                                        onclick="event.stopPropagation();">Repo ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
+
+                            <!-- Item 5: AWS EC2 Automation Portal -->
+                            <div class="ship-log-item" data-project="ec2-portal">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">AWS EC2 Self-Service Automation Portal</h4>
+                                        <span class="item-date">2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">FastAPI</span>
+                                        <span class="item-tag">AWS CLI</span>
+                                        <span class="item-tag">Docker</span>
+                                        <span class="item-tag">Python</span>
+                                    </div>
+                                    <p class="item-desc">Self-service EC2 instance management for dev teams with
+                                        automated resource scheduling to eliminate idle cloud costs.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://github.com/Ahmed-Shahi/EC2-Automation-Website" target="_blank"
+                                        rel="noopener noreferrer" class="item-link" title="GitHub Repo"
+                                        onclick="event.stopPropagation();">Repo ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
+
+                            <!-- Item 6: Remote Desktop via SMS -->
+                            <div class="ship-log-item" data-project="sms-agent">
+                                <div class="item-main">
+                                    <div class="item-title-row">
+                                        <h4 class="item-title">Remote Desktop Control Agent via SMS Automation</h4>
+                                        <span class="item-date">Feb 2026</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span class="item-tag">Python</span>
+                                        <span class="item-tag">ADB</span>
+                                        <span class="item-tag">Windows API</span>
+                                        <span class="item-tag">Bash</span>
+                                    </div>
+                                    <p class="item-desc">Secure Windows OS administrative task execution triggered
+                                        remotely through encrypted SMS protocol listeners.</p>
+                                </div>
+                                <div class="item-actions">
+                                    <a href="https://github.com/Ahmed-Shahi" target="_blank" rel="noopener noreferrer"
+                                        class="item-link" title="GitHub Profile" onclick="event.stopPropagation();">Repo
+                                        ↗</a>
+                                    <button class="item-expand-btn" aria-label="Open project details">Details
+                                        &rarr;</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/Mutlvendor.png" alt="Multi-Vendor E-Commerce">
+                </div>
+
+                <!-- Visual Gallery View (Cards with Screenshots) -->
+                <div class="projects-grid-view hidden" id="projects-grid-view">
+                    <!-- Project Card 1: Clinic -->
+                    <div class="gallery-card" data-project="clinic">
+                        <div class="gallery-thumb">
+                            <img src="assets/Clinic.png" alt="Clinic Appointment Portal" loading="lazy">
+                            <span class="thumb-badge">Google Gemini AI</span>
                         </div>
-                        <div class="project-content">
-                            <h3>Smart Multi-Vendor E-Commerce Marketplace</h3>
-                            <p>A robust and modern Multi-Vendor E-Commerce platform built with a full-stack architecture. This system allows multiple sellers to manage their own stores, products, and orders while providing a seamless shopping experience for customers.</p>
-                            <div class="project-tech">MERN+Multer+Cloudinary Stack</div>
-                            <a href="https://github.com/Ahmed-Shahi/Multi-Vendor-E-Commerce-Marketplace-" target="_blank" class="github-link">GitHub Repo</a> <br>
-                            <a href="https://market-place-frontend-inky.vercel.app/" target="_blank" class="github-link">View Live</a>
+                        <div class="gallery-content">
+                            <h3>AI-Powered Healthcare &amp; Clinic Portal</h3>
+                            <p>Featuring specialized dashboards for Patients, Doctors, and Administrators with Gemini AI
+                                symptom triage and real-time scheduling.</p>
+                            <div class="gallery-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Gemini API</span>
+                            </div>
+                            <div class="gallery-links">
+                                <a href="https://clinic-frontend-nu.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo ↗</a>
+                                <a href="https://github.com/Ahmed-Shahi/Clinic-Project" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub Repo</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/EC2-AWS.png" alt="AWS EC2 Self-Service Automation Portal">
+
+                    <!-- Project Card 2: Multi-Vendor -->
+                    <div class="gallery-card" data-project="multivendor">
+                        <div class="gallery-thumb">
+                            <img src="assets/Mutlvendor.png" alt="Multi-Vendor Marketplace" loading="lazy">
+                            <span class="thumb-badge">MERN + Docker</span>
                         </div>
-                        <div class="project-content">
+                        <div class="gallery-content">
+                            <h3>Smart Multi-Vendor E-Commerce Platform</h3>
+                            <p>Scalable marketplace supporting 1,000+ SKUs, multi-tier vendor portals, RBAC, inventory
+                                automation, and Cloudinary media processing.</p>
+                            <div class="gallery-tags">
+                                <span>MERN</span>
+                                <span>Redux Toolkit</span>
+                                <span>Docker</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="gallery-links">
+                                <a href="https://market-place-frontend-inky.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo ↗</a>
+                                <a href="https://github.com/Ahmed-Shahi/Multi-Vendor-E-Commerce-Marketplace-"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Video Chat -->
+                    <div class="gallery-card" data-project="video-chat">
+                        <div class="gallery-thumb">
+                            <img src="assets/VideoChat.png" alt="Video Chat Platform" loading="lazy">
+                            <span class="thumb-badge">WebSockets + WebRTC</span>
+                        </div>
+                        <div class="gallery-content">
+                            <h3>Cloud Real-Time Video Communication</h3>
+                            <p>Sub-100ms connection latency peer-to-peer audio/video calling. Containerized on AWS EC2
+                                with Nginx reverse proxy and SSL automation.</p>
+                            <div class="gallery-tags">
+                                <span>WebSockets</span>
+                                <span>WebRTC</span>
+                                <span>Docker</span>
+                                <span>AWS EC2</span>
+                            </div>
+                            <div class="gallery-links">
+                                <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/VIDEO-CHAT"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub Repo
+                                    ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: WhatsApp Bot / AI Chatbot -->
+                    <div class="gallery-card" data-project="whatsapp-bot">
+                        <div class="gallery-thumb">
+                            <img src="assets/Chatbot.png" alt="AI Chatbot and Automation" loading="lazy">
+                            <span class="thumb-badge">Meta API + 99.9% Uptime</span>
+                        </div>
+                        <div class="gallery-content">
+                            <h3>WhatsApp Cloud Bot &amp; AI Chat Hub</h3>
+                            <p>Automated business order pipeline cutting turnaround to &lt;30s, with persistent chat
+                                storage, instant sales alerts, and CSV analytics.</p>
+                            <div class="gallery-tags">
+                                <span>Meta Graph API</span>
+                                <span>Node.js</span>
+                                <span>Webhooks</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="gallery-links">
+                                <a href="https://github.com/Ahmed-Shahi/PROJECTS-2025/tree/main/AI-CHATBOT"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub Repo
+                                    ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5: EC2 Automation -->
+                    <div class="gallery-card" data-project="ec2-portal">
+                        <div class="gallery-thumb">
+                            <img src="assets/EC2-AWS.png" alt="AWS EC2 Automation Portal" loading="lazy">
+                            <span class="thumb-badge">FastAPI + AWS CLI</span>
+                        </div>
+                        <div class="gallery-content">
                             <h3>AWS EC2 Self-Service Automation Portal</h3>
-                            <p>A powerful, lightweight FastAPI-based portal for self-service AWS EC2 instance management. Designed for dev teams to provision temporary resources with automated cleanup to keep cloud costs at zero.</p>
-                            <div class="project-tech">FastAPI + AWS CLI</div>
-                            <a href="https://github.com/Ahmed-Shahi/EC2-Automation-Website" target="_blank" class="github-link">GitHub Repo</a>
+                            <p>FastAPI portal for dev teams to provision on-demand EC2 instances with scheduled
+                                auto-cleanup to keep cloud costs minimized.</p>
+                            <div class="gallery-tags">
+                                <span>FastAPI</span>
+                                <span>AWS CLI</span>
+                                <span>Docker</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="gallery-links">
+                                <a href="https://github.com/Ahmed-Shahi/EC2-Automation-Website" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub Repo ↗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-links">
-                    <a href="https://github.com/Ahmed-Shahi" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/ahmed-shahi-4886b1247/" target="_blank">LinkedIn</a>
+        <!-- HOW I WORK Section -->
+        <section id="how-i-work" class="section work-method-section">
+            <div class="section-container">
+                <div class="how-i-work-grid">
+                    <!-- Left: Large Headline -->
+                    <div class="hiw-col-title">
+                        <h2 class="massive-section-title">
+                            HOW I<br><span class="text-muted">WORK</span>
+                        </h2>
+                    </div>
+
+                    <!-- Center: Gentleman with Lightbulb Head -->
+                    <div class="hiw-col-image">
+                        <div class="lightbulb-man-wrap">
+                            <img src="assets/lightbulb-man.jpg"
+                                alt="Surreal Gentleman with glowing lightbulb head seated in Chesterfield armchair"
+                                class="lightbulb-man-img" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Right: Numbered Editorial Steps -->
+                    <div class="hiw-col-steps">
+                        <div class="step-list">
+                            <div class="step-row" tabindex="0">
+                                <div class="step-num-title">
+                                    <span class="step-number">01</span>
+                                    <span class="step-dash">&mdash;</span>
+                                    <h3 class="step-name">Understand</h3>
+                                </div>
+                                <p class="step-detail">
+                                    Deconstruct core business needs, throughput limits, and data flows before touching a
+                                    line of code. Establish strict contracts and architecture patterns.
+                                </p>
+                            </div>
+
+                            <div class="step-row" tabindex="0">
+                                <div class="step-num-title">
+                                    <span class="step-number">02</span>
+                                    <span class="step-dash">&mdash;</span>
+                                    <h3 class="step-name">Design</h3>
+                                </div>
+                                <p class="step-detail">
+                                    Design robust relational &amp; NoSQL schemas, granular RBAC permissions, modular
+                                    component trees, and resilient API routing strategies.
+                                </p>
+                            </div>
+
+                            <div class="step-row" tabindex="0">
+                                <div class="step-num-title">
+                                    <span class="step-number">03</span>
+                                    <span class="step-dash">&mdash;</span>
+                                    <h3 class="step-name">Build</h3>
+                                </div>
+                                <p class="step-detail">
+                                    Construct clean React interfaces, secure Express/Node services, real-time WebSocket
+                                    pipelines, and containerized Docker microservices.
+                                </p>
+                            </div>
+
+                            <div class="step-row" tabindex="0">
+                                <div class="step-num-title">
+                                    <span class="step-number">04</span>
+                                    <span class="step-dash">&mdash;</span>
+                                    <h3 class="step-name">Refine</h3>
+                                </div>
+                                <p class="step-detail">
+                                    Optimize database queries (30%+ gains), configure Nginx reverse proxies, deploy on
+                                    AWS EC2/S3, and enforce automated testing and CI/CD pipelines.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <div class="experience-header">
+                    <h2 class="massive-section-title">
+                        EXPERIEN<span class="text-muted">CE</span>
+                    </h2>
+                    <p class="section-tagline">
+                        Production engineering across enterprise ERPs, automated cloud bots, and multi-tenant
+                        architectures.
+                    </p>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Aerox ERP -->
+                    <div class="timeline-card">
+                        <div class="card-timeline-marker"></div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-role-header">
+                                <div class="role-org-group">
+                                    <h3 class="role-company">Aerox ERP</h3>
+                                    <span class="role-sep">&bull;</span>
+                                    <span class="role-title">Full Stack Developer Intern</span>
+                                </div>
+                                <div class="role-time-loc">
+                                    <span class="role-badge onsite">Onsite &bull; Karachi</span>
+                                    <span class="role-date">July 2026 &ndash; Present</span>
+                                </div>
+                            </div>
+                            <p class="timeline-summary">
+                                Developing scalable Enterprise Resource Planning (ERP) modules with React.js and Node.js
+                                REST APIs across 5+ core business workflows.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Engineering responsive frontend components with React.js and integrating them
+                                    seamlessly with secure backend RESTful APIs.</li>
+                                <li>Participating in continuous integration, automated testing workflows, and
+                                    Agile/Scrum sprint release cycles.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AJP Pharma -->
+                    <div class="timeline-card">
+                        <div class="card-timeline-marker"></div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-role-header">
+                                <div class="role-org-group">
+                                    <h3 class="role-company">AJP Pharma</h3>
+                                    <span class="role-sep">&bull;</span>
+                                    <span class="role-title">Freelance Full Stack / WhatsApp ChatBot Automation</span>
+                                </div>
+                                <div class="role-time-loc">
+                                    <span class="role-badge remote">Remote</span>
+                                    <span class="role-date">June 2026 &ndash; July 2026</span>
+                                </div>
+                            </div>
+                            <p class="timeline-summary">
+                                Architected an automated WhatsApp Business Cloud Bot using Node.js/Express, Meta Graph
+                                API, and Webhooks, achieving 99.9% uptime for 24/7 doctor inquiries.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Engineered an automated end-to-end pharmaceutical order pipeline, cutting order
+                                    confirmation turnaround from 4+ hours to under 30 seconds.</li>
+                                <li>Integrated real-time instant alert dispatching to sales managers on incoming
+                                    high-priority leads, boosting deal conversion rates by ~35%.</li>
+                                <li>Designed and deployed a centralized management dashboard to monitor real-time
+                                    customer orders, transaction lifecycles, and account details.</li>
+                                <li>Implemented automated multi-parameter filtering and high-speed CSV export
+                                    functionality, cutting reporting and order reconciliation time by over 80%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ITSolera -->
+                    <div class="timeline-card">
+                        <div class="card-timeline-marker"></div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-role-header">
+                                <div class="role-org-group">
+                                    <h3 class="role-company">ITSolera</h3>
+                                    <span class="role-sep">&bull;</span>
+                                    <span class="role-title">MERN Stack Intern</span>
+                                </div>
+                                <div class="role-time-loc">
+                                    <span class="role-badge remote">Remote</span>
+                                    <span class="role-date">January 2026 &ndash; April 2026</span>
+                                </div>
+                            </div>
+                            <p class="timeline-summary">
+                                Architected and deployed 25+ secure RESTful endpoints using Node.js, Express.js, and
+                                MongoDB for a multi-tenant e-commerce platform.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Engineered granular Role-Based Access Control (RBAC) across 3 custom dashboards
+                                    (Admin, Seller, Customer) using React.js and Redux Toolkit.</li>
+                                <li>Containerized backend micro-services with Docker, reducing environment configuration
+                                    time for onboarding developers by 60%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDIES Section -->
+        <section id="case-studies" class="section case-studies-section">
+            <div class="section-container">
+                <div class="case-studies-header">
+                    <h2 class="massive-section-title">
+                        CASE STUD<span class="text-muted">IES</span>
+                    </h2>
+                </div>
+
+                <div class="case-study-list">
+                    <div class="case-study-row">
+                        <div class="cs-num-col">01</div>
+                        <div class="cs-content-col">
+                            <h3 class="cs-title">AJP Pharma &mdash; 24/7 Automated WhatsApp Order Pipeline</h3>
+                            <p class="cs-desc">Architected end-to-end webhook-driven system reducing order confirmation
+                                turnaround from 4+ hours to under 30 seconds, maintaining 99.9% uptime and raising
+                                conversions by 35%.</p>
+                            <div class="cs-tags">
+                                <span>Meta Graph API</span>
+                                <span>Webhooks</span>
+                                <span>Node.js</span>
+                                <span>CSV Stream Engine</span>
+                            </div>
+                        </div>
+                        <div class="cs-arrow-col">
+                            <span class="cs-arrow">&rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-row">
+                        <div class="cs-num-col">02</div>
+                        <div class="cs-content-col">
+                            <h3 class="cs-title">Multi-Vendor E-Commerce &mdash; 3-Tier Granular RBAC</h3>
+                            <p class="cs-desc">Engineered full microservices backend supporting 1,000+ catalog SKUs,
+                                separated vendor admin portals, real-time inventory locking, and containerized Docker
+                                environments.</p>
+                            <div class="cs-tags">
+                                <span>React</span>
+                                <span>Redux Toolkit</span>
+                                <span>Express REST</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                        <div class="cs-arrow-col">
+                            <span class="cs-arrow">&rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-row">
+                        <div class="cs-num-col">03</div>
+                        <div class="cs-content-col">
+                            <h3 class="cs-title">Cloud-Deployed Real-Time Video &mdash; Sub-100ms AWS Architecture</h3>
+                            <p class="cs-desc">Engineered peer-to-peer WebRTC signaling via WebSockets with automated
+                                Nginx reverse proxy, SSL renewal, and multi-container Docker cluster deployed on AWS
+                                EC2.</p>
+                            <div class="cs-tags">
+                                <span>WebSockets</span>
+                                <span>WebRTC</span>
+                                <span>AWS EC2</span>
+                                <span>Nginx Reverse Proxy</span>
+                            </div>
+                        </div>
+                        <div class="cs-arrow-col">
+                            <span class="cs-arrow">&rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-row">
+                        <div class="cs-num-col">04</div>
+                        <div class="cs-content-col">
+                            <h3 class="cs-title">AI Healthcare System &mdash; Google Gemini Clinical Triage</h3>
+                            <p class="cs-desc">Integrated Google Gemini LLM API to triage patient symptoms 24/7,
+                                reducing routine inquiry bottlenecks for clinic reception staff by 50% with accessible
+                                electronic records.</p>
+                            <div class="cs-tags">
+                                <span>Google Gemini API</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="cs-arrow-col">
+                            <span class="cs-arrow">&rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOLS OF TRADE (Stack & Skills) Section -->
+        <section id="tools" class="section tools-section">
+            <div class="section-container">
+                <div class="tools-header">
+                    <h2 class="massive-section-title">
+                        TOOLS OF TRA<span class="text-muted">DE</span>
+                    </h2>
+                    <p class="section-tagline">Battle-tested tools and frameworks I use to engineer robust digital
+                        systems.</p>
+                </div>
+
+                <div class="tools-grid">
+                    <!-- Card 1: Front-End Development -->
+                    <div class="tool-card">
+                        <div class="tool-icon-row">
+                            <div class="tool-badge-circle" title="React.js">
+                                <img src="assets/react.png" alt="React.js" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="JavaScript (ES6+)">
+                                <img src="assets/js.png" alt="JavaScript (ES6+)" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Redux Toolkit">
+                                <img src="assets/redux.png" alt="Redux Toolkit" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="HTML5 &amp; CSS3">
+                                <img src="assets/html.jpg" alt="HTML5 &amp; CSS3" loading="lazy">
+                            </div>
+                        </div>
+                        <h3 class="tool-card-title">Front-End Development</h3>
+                        <p class="tool-card-desc">Building engaging, responsive, and accessible web interfaces using
+                            modern frameworks and component libraries with clean state management.</p>
+                        <div class="tool-pills">
+                            <span>React.js</span>
+                            <span>Redux Toolkit</span>
+                            <span>JavaScript (ES6+)</span>
+                            <span>Responsive UI</span>
+                            <span>CSS3 / HTML5</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Back-End Development -->
+                    <div class="tool-card">
+                        <div class="tool-icon-row">
+                            <div class="tool-badge-circle" title="Express.js">
+                                <img src="assets/express.png" alt="Express.js" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Python">
+                                <img src="assets/python.png" alt="Python" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="WebSockets">
+                                <img src="assets/soket.png" alt="WebSockets" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Postman / RESTful APIs">
+                                <img src="assets/postman.png" alt="Postman / RESTful APIs" loading="lazy">
+                            </div>
+                        </div>
+                        <h3 class="tool-card-title">Back-End Development</h3>
+                        <p class="tool-card-desc">Developing robust server-side business logic, microservices, and
+                            secure RESTful APIs to power dynamic and scalable high-concurrency web applications.</p>
+                        <div class="tool-pills">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>RESTful APIs</span>
+                            <span>WebSockets</span>
+                            <span>Python</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Cloud & Deployment -->
+                    <div class="tool-card">
+                        <div class="tool-icon-row">
+                            <div class="tool-badge-circle" title="Docker">
+                                <img src="assets/Docker.png" alt="Docker" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="AWS">
+                                <img src="assets/AWS.png" alt="AWS" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Nginx">
+                                <img src="assets/Nginx.png" alt="Nginx" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Jenkins CI/CD">
+                                <img src="assets/Jenkins.jpg" alt="Jenkins CI/CD" loading="lazy">
+                            </div>
+                        </div>
+                        <h3 class="tool-card-title">Cloud &amp; Deployment</h3>
+                        <p class="tool-card-desc">Experienced in containerizing, deploying, and managing resilient
+                            applications using modern cloud platforms, automated reverse proxies, and CI/CD pipelines.
+                        </p>
+                        <div class="tool-pills">
+                            <span>Docker</span>
+                            <span>AWS (EC2, S3, ECR)</span>
+                            <span>ALB &amp; Auto Scaling</span>
+                            <span>Nginx</span>
+                            <span>CI/CD (Jenkins)</span>
+                            <span>Linux Shell</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Databases & Storage -->
+                    <div class="tool-card">
+                        <div class="tool-icon-row">
+                            <div class="tool-badge-circle" title="MongoDB">
+                                <img src="assets/monogo.png" alt="MongoDB" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="MySQL">
+                                <img src="assets/mysql.png" alt="MySQL" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Firebase Firestore">
+                                <img src="assets/firebase.jpg" alt="Firebase Firestore" loading="lazy">
+                            </div>
+                        </div>
+                        <h3 class="tool-card-title">Databases &amp; Storage</h3>
+                        <p class="tool-card-desc">Designing optimized relational and document schemas, query
+                            optimization (30% speedup record), indexing strategies, and multi-tenant isolation.</p>
+                        <div class="tool-pills">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>Firebase Firestore</span>
+                            <span>Query Optimization</span>
+                            <span>Data Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: AI, Webhooks & Integrations -->
+                    <div class="tool-card">
+                        <div class="tool-icon-row">
+                            <div class="tool-badge-circle" title="Google Gemini API">
+                                <img src="assets/gemini.jpg" alt="Google Gemini API" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Meta Graph API">
+                                <img src="assets/meta.jpg" alt="Meta Graph API" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Git &amp; GitHub">
+                                <img src="assets/Git &amp; GitHub.png" alt="Git &amp; GitHub" loading="lazy">
+                            </div>
+                            <div class="tool-badge-circle" title="Postman">
+                                <img src="assets/postman.png" alt="Postman" loading="lazy">
+                            </div>
+                        </div>
+                        <h3 class="tool-card-title">AI &amp; Webhooks Automation</h3>
+                        <p class="tool-card-desc">Integrating cutting-edge LLMs (Google Gemini API), Meta Graph API
+                            WhatsApp automation, webhook event dispatchers, and automated notification engines.</p>
+                        <div class="tool-pills">
+                            <span>Google Gemini API</span>
+                            <span>Meta Graph API</span>
+                            <span>Webhooks</span>
+                            <span>Postman</span>
+                            <span>Git &amp; GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Professional Certifications -->
+                    <div class="tool-card certification-card">
+                        <div class="cert-header">
+                            <span class="cert-badge">Verified Credentials</span>
+                        </div>
+                        <h3 class="tool-card-title">Certifications &amp; Training</h3>
+                        <div class="cert-list">
+                            <div class="cert-entry">
+                                <strong>IBM Full Stack Software Developer</strong>
+                                <span>Coursera IBM &bull; Cloud-Native Architecture, Microservices, CI/CD</span>
+                                <a href="https://coursera.org/share/c5fc2290739e842a8311faac67d3865a" target="_blank"
+                                    rel="noopener noreferrer" class="cert-verify-link">Verify Certificate ↗</a>
+                            </div>
+                            <div class="cert-entry">
+                                <strong>DevOps Engineering Track</strong>
+                                <span>Saylani Mass IT Training (SMIT) &bull; AWS Cloud, Docker, Jenkins,
+                                    Terraform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section ("Got a project? Let's build it.") -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="contact-box-container">
+                    <!-- Left: Form & Info -->
+                    <div class="contact-col-left">
+                        <div class="contact-header">
+                            <h2 class="contact-main-heading">Got a project? Let's build it.</h2>
+                            <p class="contact-sub-heading">Available for freelance contracts, full-time engineering
+                                roles, and innovative ventures.</p>
+                        </div>
+
+                        <form id="contact-form" class="contact-form" action="mailto:ahmedshahi038@gmail.com"
+                            method="GET">
+                            <div class="form-row-two">
+                                <div class="form-field">
+                                    <input type="text" id="first-name" name="first_name" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="form-field">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number / Subject">
+                            </div>
+
+                            <div class="form-field">
+                                <textarea id="message" name="body" rows="4"
+                                    placeholder="Tell me about your project, timeline, or vision..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-submit-row">
+                                <button type="submit" class="btn btn-submit" id="btn-submit-form">
+                                    Send Message <span class="arrow-icon">&rarr;</span>
+                                </button>
+                                <div id="form-status" class="form-status-msg"></div>
+                            </div>
+                        </form>
+
+                        <div class="direct-contact-badges">
+                            <a href="mailto:ahmedshahi038@gmail.com" class="direct-badge">
+                                <span class="badge-icon">✉️</span> ahmedshahi038@gmail.com
+                            </a>
+                            <a href="tel:+923172919178" class="direct-badge">
+                                <span class="badge-icon">📞</span> +92 317-2919178
+                            </a>
+                            <!-- <span class="direct-badge location-badge">
+                                <span class="badge-icon">📍</span> Karachi, Pakistan (Open to Remote)
+                            </span> -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Classical Sculpture with Golden Drip and Sunglasses -->
+                    <div class="contact-col-right">
+                        <div class="golden-statue-card">
+                            <img src="assets/statue-golden-bust.jpg"
+                                alt="Classical Roman marble bust with sunglasses and dripping molten gold"
+                                class="golden-statue-img" loading="lazy">
+                            <div class="statue-quote-overlay">
+                                <p class="statue-quote-text">"Precision in architecture. Velocity in shipping.
+                                    Rock-solid in production."</p>
+                                <span class="statue-quote-author">&mdash; Ahmed Shahi</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ahmed Shahi. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/ahmed-shahi-4886b1247" target="_blank" rel="noopener noreferrer"
+                    class="social-icon-link" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Ahmed-Shahi" target="_blank" rel="noopener noreferrer"
+                    class="social-icon-link" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://ahmed-shahi.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="social-icon-link" aria-label="Portfolio">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 6h2v3h-2v-3zm0 5h2v7h-2v-7z" />
+                    </svg>
+                </a>
+                <a href="mailto:ahmedshahi038@gmail.com" class="social-icon-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <!-- <p>&copy; 2026 Ahmed Shahi &mdash; Designed &amp; Built with Precision.</p> -->
+            </div>
+
+            <div class="footer-back-to-top">
+                <a href="#hero" class="back-to-top-btn" aria-label="Back to top">&uarr; Back to Top</a>
+            </div>
         </div>
     </footer>
+
+    <!-- Interactive Project Modal -->
+    <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
